@@ -1,0 +1,24 @@
+type Transfer @entity {
+id: ID!
+txHash: Bytes!
+contract: Bytes!
+from: Bytes!
+to: Bytes!
+value: BigInt!
+}
+
+type Mint @entity {
+id: ID!
+txHash: Bytes!
+contract: Bytes!
+address: Bytes!
+amount: BigInt!
+}
+
+type Burn @entity {
+id: ID!
+txHash: Bytes!
+contract: Bytes!
+address: Bytes!
+amount: BigInt!
+}
